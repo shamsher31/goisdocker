@@ -1,13 +1,13 @@
 # goisdocker
 Check if the process is running inside a Docker container
 
-# How to install
-<pre>
+### How to install
+```go
 go get github.com/shamsher31/goisdocker
-</pre>
+```
 
-# How to use
-<pre>
+### How to use
+```go
 package main
 
 import (
@@ -16,19 +16,35 @@ import (
 )
 
 func main() {
-	if(docker.Is()) {
+    if(docker.Is()) {
     fmt.Println("Running inside a Docker container")
   }
 }
-</pre>
+```
+###Aliasing Imports
+If you already have package name ```docker``` you can use following.
+```go
+package main
 
-# Related
-[goisvdo](https://github.com/shamsher31/goisvdo)
-[goistext](https://github.com/shamsher31/goistext)
-[goisimg](https://github.com/shamsher31/goisimg)
+import (
+	"fmt"
+	pckDocker "github.com/shamsher31/goisdocker"
+)
 
-# Why
-This package is inspired by [is-docker](https://www.npmjs.com/package/is-docker) npm module to check if the process is running inside a Docker container.
+func main() {
+    if(pckDocker.Is()) {
+    fmt.Println("Running inside a Docker container")
+  }
+}
+```
 
-# License
+### Related
+[goisvdo](https://github.com/shamsher31/goisvdo)<br>
+[goistext](https://github.com/shamsher31/goistext)<br>
+[goisimg](https://github.com/shamsher31/goisimg)<br>
+
+### Why
+This package is inspired by [is-docker](https://www.npmjs.com/package/is-docker) npm module.
+
+### License
 MIT © [Shamsher Ansari](https://github.com/shamsher31)
