@@ -1,6 +1,9 @@
 # goisdocker
 
 [![Godoc](http://img.shields.io/badge/godoc-reference-blue.svg?style=flat)](https://godoc.org/github.com/shamsher31/goisdocker)
+[![Build Status](https://travis-ci.org/shamsher31/goisdocker.svg)](https://travis-ci.org/shamsher31/goisdocker)
+[![GitHub release](http://img.shields.io/github/release/shamsher31/goisdocker.svg?style=flat-square)](release)
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat-square)](license)
 
 Check if the process is running inside a Docker container
 
