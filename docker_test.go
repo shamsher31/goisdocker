@@ -3,7 +3,7 @@ package docker
 import "testing"
 
 func TestIs(t *testing.T) {
-	if Is() == true {
-		t.Fatal("Should return true")
+	if Is() == false {
+		t.Fatal("Your application is not running inside docker conatiner")
 	}
 }
